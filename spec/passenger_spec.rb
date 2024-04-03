@@ -7,15 +7,15 @@ end
 
 RSpec.describe Passenger do
     it 'exists' do
-        passenger = Passenger.new('Charlie')
+        passenger = Passenger.new({"name" =>"Charlie", "age" => 18})
 
         expect(passenger).to be_an_instance_of(Passenger)
     end
 
     it 'can store a passenger name' do
-        charlie = Passenger.new('Charlie')
+        charlie = Passenger.new({"name" =>"Charlie", "age" => 18})
 
-        expect(charlie.name).to eq('Charlie')
+        expect(charlie.name).to eq("Charlie")
     end
 
 end
