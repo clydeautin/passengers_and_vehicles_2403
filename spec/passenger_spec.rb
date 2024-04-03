@@ -7,7 +7,7 @@ end
 
 RSpec.describe Passenger do
     it 'exists' do
-        passenger = Passenger.new
+        passenger = Passenger.new('Charlie')
 
         expect(passenger).to be_an_instance_of(Passenger)
     end
@@ -17,5 +17,5 @@ RSpec.describe Passenger do
 
         expect(charlie.name).to eq('Charlie')
     end
-    
+
 end
