@@ -5,10 +5,12 @@ class Passenger
     def initialize(details)
         @name = details["name"]
         @age = details["age"]
-        @driver
+        @driver? = false
     end
 
     def adult?
         @age >= 18
     end
+
+
 end
