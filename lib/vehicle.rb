@@ -2,7 +2,8 @@ class Vehicle
 
     attr_reader :model_year,
                 :make,
-                :model
+                :model,
+                :passengers
 
     def initialize(model_year, make, model)
         @model_year = model_year
@@ -16,7 +17,11 @@ class Vehicle
         @speeding
     end
 
-    def speeding?
+    def speed
         @speeding = true
+    end
+
+    def add_passenger(passenger)
+        @passengers << passenger
     end
 end
